@@ -1,0 +1,55 @@
+{
+      "config":
+    {
+  
+      "learning_rate_bb" :1e-6,
+      "learning_rate_ins" :5e-5,
+      "epochs" :50,
+      "decay_rate" :1,
+      "exp_id" :"triplet_gcn",
+      "dataset_id" :"CholecT50",
+      "exp_no" :"ghub",
+      "tr_batch_size":32,
+      "val_batch_size":32,  
+      "loss":"partial mlsm's-torch ; custom mse",
+      "init":"KHe",
+      "aug":"True",
+      "resize":"True",
+      "resize_shape":"(240,427)",  
+      "crop":"False",
+      "shuffle":"True", 
+      "checkpoint":5,
+      "nworkers":16,
+      "cnvt":1 
+  
+  
+    },
+
+    "classes":
+    {
+        "c_i":6,
+        "c_v":10,
+        "c_t":15,
+        "c_ivt":100
+    },
+
+    "data":
+    {
+        "dataset_path" :"/Cholec_Triplet/CholecT50-challenge-train/",
+        "norm":"((0.329, 0.230, 0.217), (0.265, 0.207, 0.192))"
+        
+    },
+
+    "ssl":
+    {
+        "dino_path":"/Cholec_Triplet/exp_folder/dino/",
+        "model_sd_path":"/Cholec_Triplet/exp_folder/dino_test_output/r50/checkpoint.pth"
+    },
+    
+    "output":
+    {
+        "base_path":"/Cholec_Triplet/exp_folder/"
+    }
+    
+    
+}

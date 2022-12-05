@@ -1,0 +1,6 @@
+numpy
+sklearn
+torchvision
+torch
+albumentations
+wandb
