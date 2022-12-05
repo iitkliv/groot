@@ -1,6 +1,6 @@
 # I'm Groot: a multi head multi GRaph netwOrk recognizing surgical actiOn Triplets
 
-#Details coming soon...
+Details coming soon...
 
 ## **References**
 
@@ -10,7 +10,7 @@ recognizing surgical actiOn Triplets. In Proceedings of the Thirteenth Indian
 Conference on Computer Vision, Graphics and Image Processing (ICVGIP’22),
 December 8–10, 2022, Gandhinagar, India, Soma Biswas, Shanmuganathan
 Raman, and Amit K Roy-Chowdhury (Eds.). ACM, New York, NY, USA,
-Article 19, 9 pages.https://doi.org/10.1145/3571600.3571619
+Article 19, 9 pages. https://doi.org/10.1145/3571600.3571619
 
 Jin Ye, Junjun He, Xiaojiang Peng, Wenhao Wu, and Yu Qiao. 2020. Attention-
 driven dynamic graph convolutional network for multi-label image recognition.
