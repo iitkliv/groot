@@ -254,9 +254,9 @@ class Triplet_ADD_GCN(nn.Module):
         self.num_triplets=num_triplets
         self.stat_adj_mat=stat_adj_mat
 
-        self.sam_i=Instrument_SAM(num_instruments,2048,256)
-        self.sam_v=Verb_SAM(num_verbs,2048,256)
-        self.sam_t=Target_SAM(num_targets,2048,256)
+        self.sam_i=Instrument_SAM(num_instruments,512,256)
+        self.sam_v=Verb_SAM(num_verbs,512,256)
+        self.sam_t=Target_SAM(num_targets,512,256)
 
 
         self.gcn_i = DynamicGraphConvolution(256, 256, 6,device,stat_adj_mat[0],component=True)
@@ -382,7 +382,7 @@ def create_backbone(config,device):
 
     torch.manual_seed(7)
 
-    teacher =models.__dict__['resnet50']()
+    teacher =models.__dict__['resnet18']()
     embed_dim = teacher.fc.weight.shape[1]
     teacher = utils.MultiCropWrapper(
         teacher,

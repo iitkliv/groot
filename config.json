@@ -9,8 +9,8 @@
       "exp_id" :"triplet_gcn",
       "dataset_id" :"CholecT50",
       "exp_no" :"ghub",
-      "tr_batch_size":32,
-      "val_batch_size":32,  
+      "tr_batch_size":64,
+      "val_batch_size":64,  
       "loss":"partial mlsm's-torch ; custom mse",
       "init":"KHe",
       "aug":"True",
@@ -43,7 +43,7 @@
     "ssl":
     {
         "dino_path":"/Cholec_Triplet/exp_folder/dino/",
-        "model_sd_path":"/Cholec_Triplet/exp_folder/dino_test_output/r50/checkpoint.pth"
+        "model_sd_path":"/Cholec_Triplet/exp_folder/dino_test_output/r18/checkpoint.pth"
     },
     
     "output":
